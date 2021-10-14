@@ -1,2 +1,2 @@
 # Sitecore.CDP.ML
-ML enpoint for Sitecore CPD demo. Age and gender prediction by photo
+ML enpoint for Sitecore CDP demo. Age and gender prediction by photo
