@@ -1,0 +1,54 @@
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Production
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\sba\source\repos\WebGender\bin\Release\net5.0\publish
+fail: Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer[2]
+      Connection ID "18086456126605361170", Request ID "8000001c-0005-fb00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+      Emgu.CV.Util.CvException: OpenCV: FAILED: fs.is_open(). Can't open "C:\Users\sba\source\repos\WebGender\bin\Release\net5.0\publish\deploy_gender.prototxt"
+         at Emgu.CV.CvInvoke.CvErrorHandler(Int32 status, IntPtr funcName, IntPtr errMsg, IntPtr fileName, Int32 line, IntPtr userData)
+         at Emgu.CV.Dnn.DnnInvoke.cveReadNetFromCaffe(IntPtr prototxt, IntPtr caffeModel)
+         at Emgu.CV.Dnn.DnnInvoke.ReadNetFromCaffe(String prototxt, String caffeModel)
+         at WebGender.Controllers.PhotoAnalyzeController..ctor(ILogger`1 logger, IHostEnvironment hostEnvironment) in C:\Users\sba\source\repos\WebGender\Controllers\PhotoAnalyzeController.cs:line 43
+         at lambda_method3(Closure , IServiceProvider , Object[] )
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+fail: Microsoft.AspNetCore.Server.IIS.Core.IISHttpServer[2]
+      Connection ID "18086456126605361170", Request ID "8000001d-0005-fb00-b63f-84710c7967bb": An unhandled exception was thrown by the application.
+      Emgu.CV.Util.CvException: OpenCV: FAILED: fs.is_open(). Can't open "C:\Users\sba\source\repos\WebGender\bin\Release\net5.0\publish\deploy_gender.prototxt"
+         at Emgu.CV.CvInvoke.CvErrorHandler(Int32 status, IntPtr funcName, IntPtr errMsg, IntPtr fileName, Int32 line, IntPtr userData)
+         at Emgu.CV.Dnn.DnnInvoke.cveReadNetFromCaffe(IntPtr prototxt, IntPtr caffeModel)
+         at Emgu.CV.Dnn.DnnInvoke.ReadNetFromCaffe(String prototxt, String caffeModel)
+         at WebGender.Controllers.PhotoAnalyzeController..ctor(ILogger`1 logger, IHostEnvironment hostEnvironment) in C:\Users\sba\source\repos\WebGender\Controllers\PhotoAnalyzeController.cs:line 43
+         at lambda_method3(Closure , IServiceProvider , Object[] )
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass4_0.<CreateActivator>b__0(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+         at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+         at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+         at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContextOfT`1.ProcessRequestAsync()
+info: Microsoft.Hosting.Lifetime[0]
+      Application is shutting down...
